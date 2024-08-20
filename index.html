@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Analyzer</title>
+    <title>Text Matcher</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-</head>
+    <link rel="shortcut icon" href="./icon/Favicon.png" type="image/x-icon">
 <body>
     <div class="container">
         <header>
@@ -16,19 +16,19 @@
         </header>
         <div class="text-boxes">
             <div class="box-1">
-                <textarea id="text1" placeholder="Text here..."></textarea>
+                <textarea id="text1" placeholder="Text here..." required  ></textarea>
                 <button id="clearText1">Clear</button>
+                
             </div>
 
             <div class="box-2">
-                <textarea id="text2" placeholder="Text here..."></textarea>
+                <textarea id="text2" placeholder="Text here..." required></textarea>
                 <button id="clearText2">Clear</button>
             </div>
         </div>
         <button id="generateBtn">Generate</button> 
         <div class="result-box">
-            <textarea id="result"  placeholder="Result here....">
-            </textarea>
+            <textarea id="result" placeholder="Result here...."></textarea>
             <button id="copyBtn">Copy</button>
             <div id="popup" class="popup">Copied!</div>
         </div>

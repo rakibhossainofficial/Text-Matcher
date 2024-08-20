@@ -7,8 +7,13 @@
     font-family: "Roboto", sans-serif;
 }
 
+::selection{
+    background-color: rgb(153, 250, 245);
+    color: rgb(0, 0, 0);
+}
+
 .container{
-    height: 100vh;
+    height: 105vh;
     width: 100%;
     padding: 1vw;
     background-color: rgb(138, 138, 138);
@@ -40,7 +45,8 @@ header button{
 
 header button:hover{
     transition: 0.3s;
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(26, 25, 25);
+    color: #fff;
 }
 
 .text-boxes{
@@ -61,7 +67,6 @@ header button:hover{
     width: 50%;
     position: relative;
 
-    
 }
 
 .box-2{
@@ -93,6 +98,14 @@ header button:hover{
     border: none;
     cursor: pointer;
     background-color: #919191;
+    font-weight: 600;
+}
+
+.box-1 button:hover{
+    transition: 0.3s;
+    background-color: rgb(26, 25, 25);
+    color: #fff;
+
 }
 
 
@@ -117,8 +130,14 @@ header button:hover{
     border: none;
     cursor: pointer;
     background-color: #919191;
+    font-weight: 600;
 }
 
+.box-2 button:hover{
+    transition: 0.3s;
+    background-color: rgb(26, 25, 25);
+    color: #fff;
+}
 
 #generateBtn{
     height: 50px;
@@ -131,12 +150,20 @@ header button:hover{
     color: #fff;
 } 
 
+#generateBtn:hover{
+    transition: 0.3s;
+    background-color: rgb(97, 97, 97);
+    border: 3px solid rgb(0, 0, 0);
+}
+
 .result-box{
-    height: 32%;
+    height: 30%;
     width: 100%;
     margin-top: 1vw;
-    border-radius: 20px;
+    border-radius: 8px;
     overflow: hidden;
+    border: none;
+
 }
 
 .result-box textarea{
@@ -147,7 +174,7 @@ header button:hover{
     padding: 1vw;
     font-size: 17px;
     font-weight:400;
-    
+    cursor: not-allowed;
 }
 
 .result-box button{
@@ -160,7 +187,15 @@ header button:hover{
     border: none;
     cursor: pointer;
     background-color: #919191;
+    font-weight: 600;
 }
+
+.result-box button:hover{
+    transition: 0.3s;
+    background-color: rgb(26, 25, 25);
+    color: #fff;
+}
+
 
 .popup {
     visibility: hidden;
