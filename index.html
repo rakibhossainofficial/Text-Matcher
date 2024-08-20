@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button id="commonWordsBtn">Common Words</button>
+            <button id="commonSentencesBtn">Common Sentence</button>
+            <button id="missingWordsBtn">Missing Words</button>
+        </header>
+        <div class="text-boxes">
+            <div class="box-1">
+                <textarea id="text1" placeholder="Text here..."></textarea>
+                <button id="clearText1">Clear</button>
+            </div>
+
+            <div class="box-2">
+                <textarea id="text2" placeholder="Text here..."></textarea>
+                <button id="clearText2">Clear</button>
+            </div>
+        </div>
+        <button id="generateBtn">Generate</button> 
+        <div class="result-box">
+            <textarea id="result"  placeholder="Result here....">
+            </textarea>
+            <button id="copyBtn">Copy</button>
+            <div id="popup" class="popup">Copied!</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
