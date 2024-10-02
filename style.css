@@ -8,12 +8,12 @@
 }
 
 ::selection{
-    background-color: rgb(153, 250, 245);
-    color: rgb(0, 0, 0);
+    background-color: black;
+    color: rgb(255, 255, 255);
 }
 
 .container{
-    height: 105vh;
+    height: 103vh;
     width: 100%;
     padding: 1vw;
     background-color: rgb(138, 138, 138);
@@ -85,7 +85,6 @@ header button:hover{
     border-bottom-left-radius: 20px;
     font-size: 17px;
     font-weight:400;
-
 }
 
 .box-1 button{
@@ -94,14 +93,16 @@ header button:hover{
     right: 2.5vw;
     height: 30px;
     width: 50px;
-    border-radius: 8px;
+    border-radius: 4px;
+    padding: 4px;
     border: none;
     cursor: pointer;
     background-color: #919191;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
-.box-1 button:hover{
+.box-1 button:active{
     transition: 0.3s;
     background-color: rgb(26, 25, 25);
     color: #fff;
@@ -126,14 +127,16 @@ header button:hover{
     right: 2.5vw;
     height: 30px;
     width: 50px;
-    border-radius: 8px;
+    border-radius: 4px;
+    padding: 5px;
     border: none;
     cursor: pointer;
     background-color: #919191;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
-.box-2 button:hover{
+.box-2 button:active{
     transition: 0.3s;
     background-color: rgb(26, 25, 25);
     color: #fff;
@@ -148,6 +151,7 @@ header button:hover{
     border: none;
     background-color: rgb(10, 10, 10);
     color: #fff;
+    text-transform: uppercase;
 } 
 
 #generateBtn:hover{
@@ -157,7 +161,7 @@ header button:hover{
 }
 
 .result-box{
-    height: 30%;
+    height: 29%;
     width: 100%;
     margin-top: 1vw;
     border-radius: 8px;
@@ -174,19 +178,19 @@ header button:hover{
     padding: 1vw;
     font-size: 17px;
     font-weight:400;
-    cursor: not-allowed;
+    border:none;
+    outline: none;
 }
 
-.result-box button{
+.result-box span {
     position: absolute;
-    bottom: 5%;
-    right: 5%;
-    height: 30px;
-    width: 50px;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    height: 1rem;
+    width: 2rem;
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    background-color: #919191;
     font-weight: 600;
 }
 
@@ -217,4 +221,3 @@ header button:hover{
     visibility: visible;
     opacity: 1;
 }
-
